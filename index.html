@@ -1,0 +1,1314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gohul Vempadimuthusami Kannan | Data scientist</title>
+<meta name="description" content="Gohul Vempadimuthusami Kannan is a data science master's student at Northeastern University working on data analysis, machine learning, and computer vision.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gohul Vempadimuthusami Kannan | Data scientist">
+<meta property="og:description" content="Projects in time-series analysis, customer segmentation, regression, and deep learning, including person re-identification with 92.4% accuracy.">
+<meta name="theme-color" content="#F6F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#140D22" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231A1030'/%3E%3Cg stroke-linecap='round' stroke-width='6'%3E%3Cpath d='M14 44L26 20' stroke='%233B528B'/%3E%3Cpath d='M30 46L34 18' stroke='%2321918C'/%3E%3Cpath d='M40 44L52 22' stroke='%23FDE725'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('gvk-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --header-h:64px;
+  --gutter:clamp(20px,5vw,48px);
+  --maxw:1120px;
+  --font:"Atkinson Hyperlegible","Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+  --paper:#F6F6F9;--surface:#FFFFFF;--ink:#1D1430;--slate:#5A5470;
+  --rule:#E1DEEA;--rule-strong:#C9C4D8;--link:#3B528B;--focus:#21918C;
+  --marker:#FDE725;--marker-ink:#1D1430;--marker-soft:#FBF5C8;
+  --btn-bg:#1D1430;--btn-bg-hover:#352A4F;--btn-ink:#F6F6F9;
+  --chip-bg:#ECEAF3;--dot:#21918C;
+  --fig-bg:#1A1030;--fig-border:#1A1030;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#140D22;--surface:#1C1430;--ink:#EEEAF6;--slate:#ADA6C2;
+    --rule:#2C2443;--rule-strong:#43395E;--link:#7FD6CB;--focus:#FDE725;
+    --marker:#FDE725;--marker-ink:#1D1430;--marker-soft:#3A3415;
+    --btn-bg:#EEEAF6;--btn-bg-hover:#D9D3E8;--btn-ink:#140D22;
+    --chip-bg:#241B3B;--dot:#5EC962;
+    --fig-bg:#1E1537;--fig-border:#31284A;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#140D22;--surface:#1C1430;--ink:#EEEAF6;--slate:#ADA6C2;
+  --rule:#2C2443;--rule-strong:#43395E;--link:#7FD6CB;--focus:#FDE725;
+  --marker:#FDE725;--marker-ink:#1D1430;--marker-soft:#3A3415;
+  --btn-bg:#EEEAF6;--btn-bg-hover:#D9D3E8;--btn-ink:#140D22;
+  --chip-bg:#241B3B;--dot:#5EC962;
+  --fig-bg:#1E1537;--fig-border:#31284A;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{background:var(--paper);scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--header-h) + 12px);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:1.125rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+[hidden]{display:none!important}
+img,svg,canvas{max-width:100%}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1.5px}
+a:hover{text-decoration-thickness:2.5px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:8px}
+.wrap{width:min(var(--maxw),100% - 2*var(--gutter));margin-inline:auto}
+.skip{position:absolute;left:12px;top:-200px;z-index:60;background:var(--btn-bg);color:var(--btn-ink);padding:10px 16px;border-radius:999px;font-weight:700;text-decoration:none}
+.skip:focus{top:calc(env(safe-area-inset-top,0px) + 10px)}
+.vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* Header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--paper);border-bottom:1px solid transparent}
+.site-header.scrolled{border-bottom-color:var(--rule)}
+.header-inner{display:flex;align-items:center;gap:12px;height:var(--header-h)}
+.brand{margin-right:auto;font-weight:700;font-size:1.0625rem;color:var(--ink);text-decoration:none}
+.nav-list{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;list-style:none;margin:0;padding:8px var(--gutter) 20px;background:var(--paper);border-bottom:1px solid var(--rule)}
+.nav-list.open{display:flex}
+.nav-list a{display:flex;align-items:center;min-height:48px;padding:0 12px;border-radius:999px;color:var(--ink);text-decoration:none;font-size:1.125rem}
+.nav-list a:hover{background:var(--chip-bg)}
+.nav-list a[aria-current]{background:var(--marker);color:var(--marker-ink)}
+.icon-btn,.menu-btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;min-width:40px;border-radius:999px;border:1.5px solid var(--rule-strong);background:transparent;color:var(--ink);font:inherit;font-size:1rem;font-weight:700;cursor:pointer}
+.menu-btn{padding:0 16px}
+.icon-btn:hover,.menu-btn:hover{background:var(--chip-bg)}
+@media (min-width:1080px){
+  html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 24px)}
+  .layout{display:grid;grid-template-columns:200px minmax(0,1fr);column-gap:clamp(32px,4vw,56px);width:min(1360px,100% - 2*var(--gutter));margin-inline:auto}
+  .site-header{top:calc(env(safe-area-inset-top,0px) + 24px);align-self:start;margin:24px 0;background:transparent;border:0}
+  .site-header .header-inner{width:auto;height:auto;margin:0;flex-direction:column;align-items:stretch;gap:12px;padding:18px 12px 12px;background:var(--surface);border:1px solid var(--rule);border-radius:18px}
+  .brand{margin:0;padding:0 12px 8px;border-bottom:1px solid var(--rule)}
+  .menu-btn{display:none}
+  .nav-list{display:flex;position:static;gap:2px;padding:0;background:transparent;border:0}
+  .nav-list a{min-height:40px;font-size:1rem}
+  .theme-btn{align-self:flex-start;margin:2px 0 0 4px}
+  .main-col{width:min(100%,980px)}
+  .main-col .wrap{width:100%;margin-inline:0}
+  .main-col .hero{padding-top:24px}
+  .main-col .section{scroll-margin-top:calc(-1 * clamp(52px,7vw,88px))}
+}
+
+/* Hero */
+.hero{padding:clamp(12px,2.5vw,28px) 0 clamp(40px,6vw,72px)}
+.fig{margin:0;display:none}
+.js .fig{display:block}
+.fig-panel{position:relative;aspect-ratio:3.5/1;background:var(--fig-bg);border:1px solid var(--fig-border);border-radius:20px;overflow:hidden}
+.fig-panel canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y;cursor:crosshair}
+.fig figcaption{display:flex;justify-content:space-between;align-items:flex-start;gap:10px 32px;margin-top:12px;color:var(--slate);font-size:.9375rem;line-height:1.5}
+.fig figcaption p{margin:0;max-width:66ch}
+.colorbar{display:flex;align-items:center;gap:8px;flex-shrink:0;font-size:.875rem;padding-top:2px}
+.colorbar .bar{width:112px;height:8px;border-radius:4px;background:linear-gradient(90deg,#440154,#3B528B,#21918C,#5EC962,#FDE725)}
+@media (max-width:640px){.fig-panel{aspect-ratio:2/1;border-radius:14px}.fig figcaption{flex-direction:column}}
+.hero-body{margin-top:clamp(28px,3.5vw,38px)}
+.about{margin-bottom:28px;max-width:64ch}
+.about p{margin:0 0 14px;color:var(--slate)}
+.about .about-intro{color:var(--ink)}
+.about .about-callout{margin:18px 0;padding:14px 18px;border-radius:14px;background:var(--marker-soft);color:var(--ink)}
+.hero h1{margin:0 0 16px;font-size:clamp(1.75rem,3.4vw + 1rem,2.5rem);line-height:1.08;letter-spacing:-.018em;overflow-wrap:break-word}
+.lead{margin:0 0 14px;font-size:clamp(1.25rem,2.1vw,1.5rem);line-height:1.42;max-width:32em}
+.sub{margin:0 0 28px;color:var(--slate);max-width:38em}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:999px;border:1.5px solid var(--rule-strong);background:transparent;color:var(--ink);font:inherit;font-size:1rem;font-weight:700;line-height:1.2;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--chip-bg)}
+.btn-primary{background:var(--btn-bg);border-color:var(--btn-bg);color:var(--btn-ink)}
+.btn-primary:hover{background:var(--btn-bg-hover);border-color:var(--btn-bg-hover)}
+.btn-link{border-color:transparent;padding:0 12px;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.btn-link:hover{background:transparent;text-decoration-thickness:2.5px}
+.btn-small{min-height:38px;padding:0 14px;font-size:.9375rem}
+.copy-menu{position:relative;display:inline-flex}
+.menu{position:absolute;left:0;top:calc(100% + 8px);z-index:30;width:max-content;max-width:calc(100vw - 2*var(--gutter));padding:8px;border:1px solid var(--rule);border-radius:16px;background:var(--surface);box-shadow:0 12px 32px rgba(29,20,48,.16)}
+.menu-title{margin:4px 12px 6px;color:var(--slate);font-size:.875rem}
+.menu button{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:10px 12px;border:0;border-radius:10px;background:transparent;color:var(--ink);font:inherit;text-align:left;cursor:pointer}
+.menu-text{display:flex;flex-direction:column;gap:2px;min-width:0}
+.menu-icon{flex-shrink:0;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--rule-strong)}
+.i-check{display:none}
+.copied .i-copy{display:none}
+.copied .i-check{display:block;color:var(--focus)}
+.copied .menu-icon,.copy-btn.copied{border-color:var(--focus)}
+.menu button:hover{background:var(--chip-bg)}
+.menu-label{font-weight:700;font-size:.9375rem}
+.menu-addr{font-size:.9375rem;color:var(--slate);overflow-wrap:break-word}
+
+/* Sections */
+.section{padding:clamp(52px,7vw,88px) 0;border-top:1px solid var(--rule);scroll-margin-top:calc(8px - clamp(52px,7vw,88px))}
+.section-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:8px 32px;align-items:end;margin-bottom:28px}
+.section h2{margin:0;font-size:clamp(1.875rem,3.4vw,2.25rem);line-height:1.15;letter-spacing:-.012em}
+.section-head p{margin:0;color:var(--slate);max-width:56ch}
+@media (max-width:760px){.section-head{grid-template-columns:minmax(0,1fr)}}
+
+/* Project filters */
+.filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:16px}
+.filters button{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border-radius:999px;border:1.5px solid var(--rule-strong);background:transparent;color:var(--ink);font:inherit;font-size:1rem;cursor:pointer}
+.filters button:hover{background:var(--chip-bg)}
+.filters .n{font-size:.875rem;color:var(--slate)}
+.filters button[aria-pressed="true"]{background:var(--btn-bg);border-color:var(--btn-bg);color:var(--btn-ink)}
+.filters button[aria-pressed="true"] .n{color:inherit;opacity:.8}
+.filter-status{margin:0 0 0 auto;color:var(--slate);font-size:.9375rem}
+@media (max-width:700px){.filter-status{margin-left:0;flex-basis:100%}}
+
+/* Project list */
+.projects{border-top:1.5px solid var(--ink)}
+.project{border-bottom:1px solid var(--rule)}
+.project>summary{display:block;list-style:none;cursor:pointer;padding:20px 12px;margin:0 -12px;border-radius:12px}
+.project>summary::-webkit-details-marker{display:none}
+.project>summary:hover{background:var(--chip-bg)}
+.p-row{display:grid;grid-template-columns:4rem minmax(0,1fr) minmax(0,16rem) 34px;grid-template-areas:"when main meta toggle";gap:6px 24px;align-items:start}
+.p-when{grid-area:when;color:var(--slate);font-size:.9375rem;padding-top:4px}
+.p-main{grid-area:main;min-width:0}
+.p-title{display:block;font-weight:700;font-size:1.25rem;line-height:1.3}
+.p-sum{display:block;margin-top:4px;color:var(--slate);max-width:58ch}
+.p-meta{grid-area:meta;font-size:.9375rem;line-height:1.5;padding-top:4px}
+.p-k{display:block;color:var(--slate)}
+.p-toggle{grid-area:toggle;justify-self:end;position:relative;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--rule-strong)}
+.p-toggle::before,.p-toggle::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;margin:-1px 0 0 -6px;background:var(--ink);border-radius:1px}
+.p-toggle::after{transform:rotate(90deg);transition:transform .2s ease}
+.project[open] .p-toggle{border-color:var(--ink)}
+.project[open] .p-toggle::after{transform:rotate(0deg)}
+@media (max-width:860px){
+  .p-row{grid-template-columns:minmax(0,1fr) 34px;grid-template-areas:"when toggle" "main toggle" "meta toggle"}
+  .p-when{padding-top:0}
+  .p-meta{padding-top:6px}
+  .p-k{display:inline;margin-right:6px}
+}
+.p-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,17rem);gap:28px 48px;padding:6px 0 32px calc(4rem + 24px)}
+@media (max-width:860px){.p-body{grid-template-columns:minmax(0,1fr);padding-left:0}}
+.p-label{margin:0 0 14px;font-weight:700;font-size:1rem}
+.p-q{margin:0 0 18px;font-size:1.1875rem;line-height:1.45;max-width:52ch}
+.p-desc{margin:0;max-width:60ch}
+.pipeline{list-style:none;margin:0;padding:0;max-width:60ch;counter-reset:step}
+.pipeline li{position:relative;padding:0 0 18px 46px;counter-increment:step}
+.pipeline li::before{content:counter(step);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.875rem;background:var(--sb);color:var(--si)}
+.pipeline li::after{content:"";position:absolute;left:14px;top:34px;bottom:4px;width:2px;background:var(--rule-strong)}
+.pipeline li:last-child{padding-bottom:0}
+.pipeline li:last-child::after{display:none}
+.pipeline li:nth-child(1){--sb:#440154;--si:#FFFFFF}
+.pipeline li:nth-child(2){--sb:#3B528B;--si:#FFFFFF}
+.pipeline li:nth-child(3){--sb:#21918C;--si:#1D1430}
+.pipeline li:nth-child(4){--sb:#5EC962;--si:#1D1430}
+.pipeline li:nth-child(5){--sb:#FDE725;--si:#1D1430}
+.pipeline b{display:block;line-height:1.35;padding-top:3px}
+.pipeline li span{display:block;color:var(--slate);margin-top:2px}
+.p-aside{display:flex;flex-direction:column;gap:16px}
+.result{padding:16px 18px;background:var(--surface);border:1px solid var(--rule);border-radius:14px}
+.result .num{display:block;font-size:2.5rem;font-weight:700;line-height:1;letter-spacing:-.02em}
+.result p{margin:8px 0 0;color:var(--slate);font-size:.9375rem;line-height:1.45}
+.p-facts{margin:0;display:grid;gap:10px}
+.p-facts div{display:grid;grid-template-columns:4rem minmax(0,1fr);gap:12px}
+.p-facts dt{color:var(--slate);font-size:.9375rem}
+.p-facts dd{margin:0;font-size:.9375rem;line-height:1.5}
+.p-actions{display:flex;flex-wrap:wrap;gap:8px}
+
+/* Experience */
+.timeline{list-style:none;margin:0;padding:0}
+.role{position:relative;display:grid;grid-template-columns:10rem minmax(0,1fr);gap:6px 32px;padding:28px 12px;margin:0 -12px;border-radius:14px}
+.role+.role::before{content:"";position:absolute;top:0;left:12px;right:12px;height:1px;background:var(--rule)}
+.role:first-child{padding-top:8px}
+.role-when{margin:0;color:var(--slate);font-size:.9375rem;padding-top:4px}
+.role h3{margin:0;font-size:1.3125rem;line-height:1.3}
+.role-org{margin:2px 0 12px;color:var(--slate)}
+.role-note{margin:0 0 6px}
+.role ul{margin:0;padding-left:1.15em;max-width:62ch}
+.role ul li{margin:6px 0;padding-left:4px}
+.flash{animation:flash 2s ease-out}
+@keyframes flash{0%,35%{background:var(--marker-soft)}100%{background:transparent}}
+@media (max-width:700px){.role{grid-template-columns:minmax(0,1fr)}}
+
+/* Skills */
+.skill-group{display:grid;grid-template-columns:11rem minmax(0,1fr);gap:10px 32px;padding:20px 0;border-top:1px solid var(--rule)}
+.skill-group:first-of-type{border-top:0}
+.skill-group h3{margin:0;font-size:1.0625rem;line-height:1.4;padding-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 14px;border-radius:999px;font:inherit;font-size:1rem;line-height:1.2;color:var(--ink);text-align:left}
+span.chip{background:var(--chip-bg);border:1.5px solid transparent}
+@media (max-width:700px){.skill-group{grid-template-columns:minmax(0,1fr)}.skill-group h3{padding-top:0}}
+
+/* Education */
+.edu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 48px}
+.edu{padding:12px;margin:-12px;border-radius:14px}
+.edu h3{margin:0 0 4px;font-size:1.3125rem;line-height:1.3}
+.edu p{margin:0 0 4px}
+.edu .muted{color:var(--slate)}
+.edu .courses{margin-top:12px;font-size:1rem;color:var(--slate)}
+@media (max-width:760px){.edu-grid{grid-template-columns:minmax(0,1fr)}}
+.cert-list{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--ink)}
+.cert{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,15rem) 13.5rem;gap:8px 24px;align-items:center;padding:14px 0;border-bottom:1px solid var(--rule)}
+.cert h3{margin:0;font-size:1.0625rem;line-height:1.35}
+.cert-issuer{margin:2px 0 0;color:var(--slate)}
+.cert-meta{margin:0;font-size:.9375rem;line-height:1.5;color:var(--slate)}
+.cert-meta div{display:flex;flex-wrap:wrap;gap:0 6px}
+.cert-meta dd{margin:0;color:var(--ink);overflow-wrap:anywhere}
+.cert-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.cert-groups{border-top:1.5px solid var(--ink)}
+.cert-group{border-bottom:1px solid var(--rule)}
+.cert-group>summary{display:block;list-style:none;cursor:pointer;padding:18px 12px;margin:0 -12px;border-radius:12px}
+.cert-group>summary::-webkit-details-marker{display:none}
+.cert-group>summary:hover{background:var(--chip-bg)}
+.cg-row{display:grid;grid-template-columns:minmax(0,1fr) auto 34px;gap:4px 24px;align-items:center}
+.cg-title{font-weight:700;font-size:1.25rem;line-height:1.3}
+.cg-meta{color:var(--slate);font-size:.9375rem}
+.cg-row .p-toggle{grid-area:auto}
+.cert-group[open] .p-toggle{border-color:var(--ink)}
+.cert-group[open] .p-toggle::after{transform:rotate(0deg)}
+.cert-group .cert-list{border-top:1px solid var(--rule);margin:0 0 14px}
+.cert-group .cert:last-child{border-bottom:0}
+@media (max-width:700px){.cert{grid-template-columns:minmax(0,1fr)}.cert-links{justify-content:flex-start}.cg-row{grid-template-columns:minmax(0,1fr) 34px}.cg-meta{grid-column:1;grid-row:2}.cg-row .p-toggle{grid-column:2;grid-row:1 / span 2}}
+
+/* Contact and footer */
+.contact .intro{margin:12px 0 0;max-width:52ch;color:var(--slate)}
+.emails{margin:28px 0 24px;display:grid;gap:16px}
+.emails div{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:4px 16px;align-items:center}
+.emails dt{color:var(--slate);font-size:.9375rem}
+.emails dd{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.emails a{color:var(--ink);font-weight:700;font-size:clamp(1.125rem,2.4vw,1.5rem);line-height:1.3;overflow-wrap:break-word;text-decoration-thickness:2px;text-underline-offset:6px}
+@media (max-width:560px){.emails div{grid-template-columns:minmax(0,1fr)}}
+.contact .where{margin:24px 0 0;color:var(--slate);font-size:1rem}
+.site-footer{border-top:1px solid var(--rule);padding:24px 0 36px;color:var(--slate);font-size:.9375rem}
+.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.footer-inner p{margin:0}
+.site-footer a{color:inherit}
+
+/* Toast */
+.toast-region{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;justify-content:center;padding:0 16px calc(20px + env(safe-area-inset-bottom,0px));pointer-events:none}
+.toast{max-width:min(92vw,480px);padding:12px 18px;border-radius:12px;background:var(--btn-bg);color:var(--btn-ink);font-size:.9375rem;line-height:1.4;box-shadow:0 8px 28px rgba(29,20,48,.25);opacity:0;transform:translateY(8px);transition:opacity .2s,transform .2s;overflow-wrap:anywhere}
+.toast.show{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .flash{background:var(--marker-soft)}
+}
+@media print{
+  .site-header,.fig,.actions,.filters,.p-actions,.toast-region,.p-toggle{display:none!important}
+  .section{border:0;padding:24px 0}
+  body{font-size:11pt}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="layout">
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#about">Gohul V. K.</a>
+    <nav aria-label="Sections">
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="icon-btn theme-btn" type="button" aria-label="Switch to dark theme">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="main-col">
+<main id="main">
+  <section class="hero" id="about" aria-labelledby="name">
+    <div class="wrap">
+      <figure class="fig">
+        <div class="fig-panel"><canvas id="hog" aria-hidden="true"></canvas></div>
+      </figure>
+
+      <div class="hero-body">
+        <div>
+          <h1 id="name">Gohul Vempadimuthusami Kannan</h1>
+          <p class="lead">I analyze data, build machine learning models, and turn the results into dashboards and stories people can follow.</p>
+          <div class="about">
+            <p class="about-callout">I am looking to explore internship and co-op opportunities in data analytics, data science, and AI/machine learning, where I can contribute my technical skills, learn from experienced professionals, and continue growing as an engineer and problem-solver.</p>
+            <p>I welcome connections with professionals, researchers, and fellow students working in data science, analytics, and artificial intelligence.</p>
+          </div>
+          <div class="actions">
+            <div class="copy-menu">
+              <button class="btn btn-primary" type="button" aria-expanded="false" aria-controls="email-choices" data-email-menu>Copy email</button>
+              <div class="menu" id="email-choices" hidden>
+                <p class="menu-title">Which email?</p>
+                <button type="button" data-copy-email="vempadimuthusamika.g@northeastern.edu"><span class="menu-text"><span class="menu-label">University</span><span class="menu-addr">vempadimuthusamika.g@<wbr>northeastern.edu</span></span><span class="menu-icon"><svg class="i-copy" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15h-.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="i-check" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+                <button type="button" data-copy-email="gohul2004@gmail.com"><span class="menu-text"><span class="menu-label">Personal</span><span class="menu-addr">gohul2004@gmail.com</span></span><span class="menu-icon"><svg class="i-copy" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15h-.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="i-check" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+              </div>
+            </div>
+            <a class="btn btn-link" href="https://www.linkedin.com/in/gohul-v-k/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-link" data-link="github" target="_blank" rel="noopener" hidden>GitHub</a>
+            <a class="btn btn-link" data-link="resume" target="_blank" rel="noopener" hidden>Résumé (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="work-h">Projects</h2>
+      </div>
+
+      <div class="projects">
+        <details class="project" id="p-reid" data-cats="dl cv">
+          <summary><span class="p-row">
+            <span class="p-when">2026</span>
+            <span class="p-main"><span class="p-title">Person re-identification in video</span><span class="p-sum">Recognizes the same person across video frames, with 92.4% identification accuracy.</span></span>
+            <span class="p-meta"><span class="p-k">Built with</span>YOLOv8, DeepSORT, CNN, HOG and LBP features</span>
+            <span class="p-toggle" aria-hidden="true"></span>
+          </span></summary>
+          <div class="p-body">
+            <div>
+              <p class="p-q">Can a model recognize the same person across video frames and keep their identity consistent?</p>
+              <p class="p-label">How it works</p>
+              <ol class="pipeline">
+                <li><b>Detect</b><span>YOLOv8 finds each person in every frame.</span></li>
+                <li><b>Track</b><span>DeepSORT follows each detection across frames and keeps its ID consistent.</span></li>
+                <li><b>Describe</b><span>A CNN re-identification model, combined with HOG and LBP features, captures how each person looks.</span></li>
+                <li><b>Re-identify</b><span>Those appearance features match people to the same identity when they reappear.</span></li>
+                <li><b>Organize</b><span>Each identity's detections are saved to its own folder for review.</span></li>
+              </ol>
+            </div>
+            <aside class="p-aside">
+              <div class="result"><span class="num">92.4%</span><p>identification accuracy</p></div>
+              <dl class="p-facts">
+                <div><dt>Data</dt><dd>DukeMTMC-reID video dataset, 702 identities</dd></div>
+                <div><dt>Where</dt><dd>Academic project, Sri Krishna College of Engineering and Technology</dd></div>
+                <div><dt>When</dt><dd>January to April 2026</dd></div>
+              </dl>
+              <div class="p-actions">
+                <a class="btn btn-small" data-code="p-reid" target="_blank" rel="noopener" hidden>View code</a>
+                <button class="btn btn-small" type="button" data-copy-link="p-reid">Copy link</button>
+              </div>
+            </aside>
+          </div>
+        </details>
+
+        <details class="project" id="p-learners" data-cats="analytics">
+          <summary><span class="p-row">
+            <span class="p-when">2025</span>
+            <span class="p-main"><span class="p-title">Learner activity trend analysis</span><span class="p-sum">Found patterns in opportunity and learner activity data, then shared them through interactive dashboards and reports.</span></span>
+            <span class="p-meta"><span class="p-k">Built with</span>Time-series analysis, BI dashboards, data visualization</span>
+            <span class="p-toggle" aria-hidden="true"></span>
+          </span></summary>
+          <div class="p-body">
+            <div>
+              <p class="p-q">What patterns show up across opportunities and learner activity over time?</p>
+              <p class="p-label">How it works</p>
+              <ol class="pipeline">
+                <li><b>Analyze</b><span>Trend and time-series analysis to identify patterns across opportunities and learner activity.</span></li>
+                <li><b>Visualize</b><span>Interactive dashboards and visualizations built in business intelligence tools.</span></li>
+                <li><b>Communicate</b><span>Findings presented through professional reports and visual stories.</span></li>
+              </ol>
+            </div>
+            <aside class="p-aside">
+              <dl class="p-facts">
+                <div><dt>Data</dt><dd>Opportunity and learner activity data</dd></div>
+                <div><dt>Where</dt><dd>Data analyst associate internship, Excelerate</dd></div>
+                <div><dt>When</dt><dd>September to October 2025</dd></div>
+              </dl>
+              <div class="p-actions">
+                <a class="btn btn-small" data-code="p-learners" target="_blank" rel="noopener" hidden>View dashboard</a>
+                <button class="btn btn-small" type="button" data-copy-link="p-learners">Copy link</button>
+              </div>
+            </aside>
+          </div>
+        </details>
+
+        <details class="project" id="p-caption" data-cats="dl cv">
+          <summary><span class="p-row">
+            <span class="p-when">2024</span>
+            <span class="p-main"><span class="p-title">Image caption generator</span><span class="p-sum">Generates natural-language descriptions of images with a CNN encoder and an LSTM decoder.</span></span>
+            <span class="p-meta"><span class="p-k">Built with</span>CNN, LSTM, TensorFlow, Keras</span>
+            <span class="p-toggle" aria-hidden="true"></span>
+          </span></summary>
+          <div class="p-body">
+            <div>
+              <p class="p-q">Can a model describe what's in an image in plain language?</p>
+              <p class="p-label">How it works</p>
+              <ol class="pipeline">
+                <li><b>Prepare</b><span>Images are preprocessed for the encoder.</span></li>
+                <li><b>Encode</b><span>A CNN extracts visual features from each image.</span></li>
+                <li><b>Decode</b><span>An LSTM models the word sequence from those features.</span></li>
+                <li><b>Caption</b><span>The decoder generates a natural-language description of the image.</span></li>
+              </ol>
+            </div>
+            <aside class="p-aside">
+              <dl class="p-facts">
+                <div><dt>Where</dt><dd>Academic project, Sri Krishna College of Engineering and Technology</dd></div>
+                <div><dt>When</dt><dd>September to November 2024</dd></div>
+              </dl>
+              <div class="p-actions">
+                <a class="btn btn-small" data-code="p-caption" target="_blank" rel="noopener" hidden>View code</a>
+                <button class="btn btn-small" type="button" data-copy-link="p-caption">Copy link</button>
+              </div>
+            </aside>
+          </div>
+        </details>
+
+        <details class="project" id="p-deepfake" data-cats="dl cv">
+          <summary><span class="p-row">
+            <span class="p-when">2024</span>
+            <span class="p-main"><span class="p-title">Deepfake detection</span><span class="p-sum">Classifies videos as real or manipulated using spatial and temporal features from their frames.</span></span>
+            <span class="p-meta"><span class="p-k">Built with</span>ResNeXt, LSTM, video preprocessing</span>
+            <span class="p-toggle" aria-hidden="true"></span>
+          </span></summary>
+          <div class="p-body">
+            <div>
+              <p class="p-q">Can a model tell real videos from manipulated ones?</p>
+              <p class="p-label">How it works</p>
+              <ol class="pipeline">
+                <li><b>Prepare</b><span>Videos are split into frames and preprocessed.</span></li>
+                <li><b>Look within frames</b><span>A ResNeXt CNN extracts spatial features that expose facial inconsistencies.</span></li>
+                <li><b>Look across frames</b><span>An LSTM reads the frame sequence to catch temporal artifacts.</span></li>
+                <li><b>Decide</b><span>The model flags each video as real or manipulated.</span></li>
+              </ol>
+            </div>
+            <aside class="p-aside">
+              <dl class="p-facts">
+                <div><dt>Where</dt><dd>Smart India Hackathon</dd></div>
+                <div><dt>When</dt><dd>July to August 2024</dd></div>
+              </dl>
+              <div class="p-actions">
+                <a class="btn btn-small" data-code="p-deepfake" target="_blank" rel="noopener" hidden>View code</a>
+                <button class="btn btn-small" type="button" data-copy-link="p-deepfake">Copy link</button>
+              </div>
+            </aside>
+          </div>
+        </details>
+
+        <details class="project" id="p-segment" data-cats="analytics ml">
+          <summary><span class="p-row">
+            <span class="p-when">2024</span>
+            <span class="p-main"><span class="p-title">Customer segmentation</span><span class="p-sum">Grouped a retail store's customers into segments based on their purchase history.</span></span>
+            <span class="p-meta"><span class="p-k">Built with</span>K-means clustering</span>
+            <span class="p-toggle" aria-hidden="true"></span>
+          </span></summary>
+          <div class="p-body">
+            <div>
+              <p class="p-q">Which of a retail store's customers have similar purchase histories?</p>
+              <p class="p-desc">Developed a K-means clustering model that groups customers based on their purchase history.</p>
+            </div>
+            <aside class="p-aside">
+              <dl class="p-facts">
+                <div><dt>Data</dt><dd>Retail customers' purchase history</dd></div>
+                <div><dt>Where</dt><dd>Machine learning internship, Prodigy InfoTech</dd></div>
+                <div><dt>When</dt><dd>April to May 2024</dd></div>
+              </dl>
+              <div class="p-actions">
+                <a class="btn btn-small" data-code="p-segment" target="_blank" rel="noopener" hidden>View code</a>
+                <button class="btn btn-small" type="button" data-copy-link="p-segment">Copy link</button>
+              </div>
+            </aside>
+          </div>
+        </details>
+
+        <details class="project" id="p-house" data-cats="ml">
+          <summary><span class="p-row">
+            <span class="p-when">2024</span>
+            <span class="p-main"><span class="p-title">House price prediction</span><span class="p-sum">Predicts house prices from key property features with linear regression.</span></span>
+            <span class="p-meta"><span class="p-k">Built with</span>Linear regression</span>
+            <span class="p-toggle" aria-hidden="true"></span>
+          </span></summary>
+          <div class="p-body">
+            <div>
+              <p class="p-q">Can a house's price be predicted from its key features?</p>
+              <p class="p-desc">Implemented a linear regression model that predicts house prices from key features of each property.</p>
+            </div>
+            <aside class="p-aside">
+              <dl class="p-facts">
+                <div><dt>Data</dt><dd>Housing data with key property features</dd></div>
+                <div><dt>Where</dt><dd>Machine learning internship, Prodigy InfoTech</dd></div>
+                <div><dt>When</dt><dd>April to May 2024</dd></div>
+              </dl>
+              <div class="p-actions">
+                <a class="btn btn-small" data-code="p-house" target="_blank" rel="noopener" hidden>View code</a>
+                <button class="btn btn-small" type="button" data-copy-link="p-house">Copy link</button>
+              </div>
+            </aside>
+          </div>
+        </details>
+
+        <details class="project" id="p-gesture" data-cats="dl cv">
+          <summary><span class="p-row">
+            <span class="p-when">2024</span>
+            <span class="p-main"><span class="p-title">Hand gesture recognition</span><span class="p-sum">Classifies hand gestures from images or video with a convolutional neural network.</span></span>
+            <span class="p-meta"><span class="p-k">Built with</span>CNN, TensorFlow, Keras</span>
+            <span class="p-toggle" aria-hidden="true"></span>
+          </span></summary>
+          <div class="p-body">
+            <div>
+              <p class="p-q">Can a model recognize hand gestures from images or video?</p>
+              <p class="p-desc">Built a CNN in TensorFlow and Keras that identifies and classifies hand gestures from image or video data.</p>
+            </div>
+            <aside class="p-aside">
+              <dl class="p-facts">
+                <div><dt>Where</dt><dd>Machine learning internship, Prodigy InfoTech</dd></div>
+                <div><dt>When</dt><dd>April to May 2024</dd></div>
+              </dl>
+              <div class="p-actions">
+                <a class="btn btn-small" data-code="p-gesture" target="_blank" rel="noopener" hidden>View code</a>
+                <button class="btn btn-small" type="button" data-copy-link="p-gesture">Copy link</button>
+              </div>
+            </aside>
+          </div>
+        </details>
+
+        <details class="project" id="p-catsdogs" data-cats="ml cv">
+          <summary><span class="p-row">
+            <span class="p-when">2024</span>
+            <span class="p-main"><span class="p-title">Cat and dog image classifier</span><span class="p-sum">Classifies photos as cats or dogs.</span></span>
+            <span class="p-meta"><span class="p-k">Built with</span>Image classification</span>
+            <span class="p-toggle" aria-hidden="true"></span>
+          </span></summary>
+          <div class="p-body">
+            <div>
+              <p class="p-q">Can a model tell cats from dogs in photos?</p>
+              <p class="p-desc">Implemented a machine learning model that classifies images of cats and dogs.</p>
+            </div>
+            <aside class="p-aside">
+              <dl class="p-facts">
+                <div><dt>Data</dt><dd>Cat and dog image dataset</dd></div>
+                <div><dt>Where</dt><dd>Machine learning internship, Prodigy InfoTech</dd></div>
+                <div><dt>When</dt><dd>April to May 2024</dd></div>
+              </dl>
+              <div class="p-actions">
+                <a class="btn btn-small" data-code="p-catsdogs" target="_blank" rel="noopener" hidden>View code</a>
+                <button class="btn btn-small" type="button" data-copy-link="p-catsdogs">Copy link</button>
+              </div>
+            </aside>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience" aria-labelledby="exp-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="exp-h">Experience</h2></div>
+      <ol class="timeline">
+        <li class="role" id="exp-excelerate" tabindex="-1">
+          <p class="role-when"><time datetime="2025-09">Sep</time>–<time datetime="2025-10">Oct 2025</time></p>
+          <div>
+            <h3>Data analyst associate intern</h3>
+            <p class="role-org">Excelerate, Dubai, United Arab Emirates</p>
+            <ul>
+              <li>Ran trend and time-series analysis to find patterns across opportunities and learner activity.</li>
+              <li>Built interactive dashboards and visualizations with business intelligence tools.</li>
+              <li>Presented analytical findings through reports and visual stories.</li>
+            </ul>
+            <p class="role-note">More detail under Projects: <a href="#p-learners">Learner activity trend analysis</a></p>
+          </div>
+        </li>
+        <li class="role" id="exp-prodigy" tabindex="-1">
+          <p class="role-when"><time datetime="2024-04">Apr</time>–<time datetime="2024-05">May 2024</time></p>
+          <div>
+            <h3>Machine learning intern</h3>
+            <p class="role-org">Prodigy InfoTech, Mumbai, India</p>
+            <p class="role-note">Built four models, each with its own entry under Projects:</p>
+            <ul>
+              <li><a href="#p-segment">Customer segmentation</a> with K-means clustering</li>
+              <li><a href="#p-house">House price prediction</a> with linear regression</li>
+              <li><a href="#p-gesture">Hand gesture recognition</a> with a CNN in TensorFlow and Keras</li>
+              <li><a href="#p-catsdogs">Cat and dog image classification</a></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="education" aria-labelledby="edu-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="edu-h">Education</h2></div>
+      <div class="edu-grid">
+        <article class="edu" id="edu-neu" tabindex="-1">
+          <h3>Northeastern University</h3>
+          <p>Master of Science in Data Science</p>
+          <p class="muted">Khoury College of Computer Sciences, Boston, Massachusetts. Expected December 2028.</p>
+          <p class="courses">Coursework: Essentials of Data Science, Algorithms, Machine Learning</p>
+        </article>
+        <article class="edu" id="edu-sri" tabindex="-1">
+          <h3>Sri Krishna College of Engineering and Technology</h3>
+          <p>Bachelor of Technology in Artificial Intelligence and Data Science</p>
+          <p class="muted">Coimbatore, India. Graduated 2026.</p>
+          <p class="courses">Coursework: Database Management Systems, Data Science using R, Data Engineering, Bayesian Data Analysis, Data Analytics and Visualization</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills" aria-labelledby="skills-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="skills-h">Skills</h2>
+      </div>
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="chips">
+          <li><span class="chip">Python</span></li>
+          <li><span class="chip">R</span></li>
+          <li><span class="chip">SQL</span></li>
+          <li><span class="chip">C++</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Analysis and visualization</h3>
+        <ul class="chips">
+          <li><span class="chip">Time-series and trend analysis</span></li>
+          <li><span class="chip">Bayesian data analysis</span></li>
+          <li><span class="chip">Data visualization</span></li>
+          <li><span class="chip">Interactive BI dashboards</span></li>
+          <li><span class="chip">Reports and data storytelling</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Machine learning</h3>
+        <ul class="chips">
+          <li><span class="chip">Linear regression</span></li>
+          <li><span class="chip">K-means clustering</span></li>
+          <li><span class="chip">Image classification</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Deep learning</h3>
+        <ul class="chips">
+          <li><span class="chip">TensorFlow</span></li>
+          <li><span class="chip">Keras</span></li>
+          <li><span class="chip">Convolutional neural networks</span></li>
+          <li><span class="chip">LSTM networks</span></li>
+          <li><span class="chip">ResNeXt</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Computer vision</h3>
+        <ul class="chips">
+          <li><span class="chip">YOLOv8 object detection</span></li>
+          <li><span class="chip">DeepSORT tracking</span></li>
+          <li><span class="chip">HOG and LBP features</span></li>
+          <li><span class="chip">Video frame analysis</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Data management</h3>
+        <ul class="chips">
+          <li><span class="chip">Database management systems</span></li>
+          <li><span class="chip">Data engineering</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Environments</h3>
+        <ul class="chips">
+          <li><span class="chip">Linux</span></li>
+          <li><span class="chip">Windows</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="certificates" aria-labelledby="cert-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="cert-h">Certificates</h2></div>
+      <div class="cert-groups">
+        <details class="cert-group">
+          <summary><span class="cg-row"><span class="cg-title">Data science</span><span class="cg-meta">12 certificates</span><span class="p-toggle" aria-hidden="true"></span></span></summary>
+          <ul class="cert-list">
+            <li class="cert"><div><h3>Machine Learning with Python</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Aug 2025</dd></div><div><dt>Credential ID</dt><dd>83D3YUGZSJ28</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/83D3YUGZSJ28" target="_blank" rel="noopener" aria-label="Show credential for Machine Learning with Python">Show credential</a></div></li>
+            <li class="cert"><div><h3>Applied Data Science Capstone</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Aug 2025</dd></div><div><dt>Credential ID</dt><dd>7WW7VIKS5RMJ</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/7WW7VIKS5RMJ" target="_blank" rel="noopener" aria-label="Show credential for Applied Data Science Capstone">Show credential</a></div></li>
+            <li class="cert"><div><h3>Databases and SQL for Data Science with Python</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jul 2025</dd></div><div><dt>Credential ID</dt><dd>2SCOPBPG9IF6</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/2SCOPBPG9IF6" target="_blank" rel="noopener" aria-label="Certificate for Databases and SQL for Data Science with Python">Certificate</a><a class="btn btn-small" href="https://www.credly.com/badges/b1a47192-c84e-40f9-a272-c51993e98f14/linked_in_profile" target="_blank" rel="noopener" aria-label="Badge for Databases and SQL for Data Science with Python">Badge</a></div></li>
+            <li class="cert"><div><h3>Data Analysis with Python</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jul 2025</dd></div><div><dt>Credential ID</dt><dd>2CF812WE20HU</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/2CF812WE20HU" target="_blank" rel="noopener" aria-label="Certificate for Data Analysis with Python">Certificate</a><a class="btn btn-small" href="https://www.credly.com/badges/4a54ddc7-7104-400e-90a0-5aa72a8155a5/linked_in_profile" target="_blank" rel="noopener" aria-label="Badge for Data Analysis with Python">Badge</a></div></li>
+            <li class="cert"><div><h3>Data Visualization with Python</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jul 2025</dd></div><div><dt>Credential ID</dt><dd>3C8JUFGVYDZQ</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/3C8JUFGVYDZQ" target="_blank" rel="noopener" aria-label="Certificate for Data Visualization with Python">Certificate</a><a class="btn btn-small" href="https://www.credly.com/badges/42437ef8-fa4a-4707-9cf8-e57af895c65a/linked_in_profile" target="_blank" rel="noopener" aria-label="Badge for Data Visualization with Python">Badge</a></div></li>
+            <li class="cert"><div><h3>What is Data Science?</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jun 2025</dd></div><div><dt>Credential ID</dt><dd>FO49NE62UG9B</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/FO49NE62UG9B" target="_blank" rel="noopener" aria-label="Show credential for What is Data Science?">Show credential</a></div></li>
+            <li class="cert"><div><h3>Data Science Orientation</h3><p class="cert-issuer">Coursera</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jun 2025</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.credly.com/badges/5e4567d5-7327-4489-b886-0da308589e18/linked_in_profile" target="_blank" rel="noopener" aria-label="Show credential for Data Science Orientation">Show credential</a></div></li>
+            <li class="cert"><div><h3>Tools for Data Science</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jun 2025</dd></div><div><dt>Credential ID</dt><dd>1U383SOBYQ4N</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/1U383SOBYQ4N" target="_blank" rel="noopener" aria-label="Certificate for Tools for Data Science">Certificate</a><a class="btn btn-small" href="https://www.credly.com/badges/2cea7072-7e3d-4576-beac-03f62e7d0e91/linked_in_profile" target="_blank" rel="noopener" aria-label="Badge for Tools for Data Science">Badge</a></div></li>
+            <li class="cert"><div><h3>Data Science Methodology</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jun 2025</dd></div><div><dt>Credential ID</dt><dd>JG26CCFGEEW5</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/JG26CCFGEEW5" target="_blank" rel="noopener" aria-label="Certificate for Data Science Methodology">Certificate</a><a class="btn btn-small" href="https://www.credly.com/badges/e2f5c0d9-6f46-4ca9-b83b-df519a6cbae6/linked_in_profile" target="_blank" rel="noopener" aria-label="Badge for Data Science Methodology">Badge</a></div></li>
+            <li class="cert"><div><h3>Python Project for Data Science</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jun 2025</dd></div><div><dt>Credential ID</dt><dd>SXKXDFXX2E8M</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/SXKXDFXX2E8M" target="_blank" rel="noopener" aria-label="Certificate for Python Project for Data Science">Certificate</a><a class="btn btn-small" href="https://www.credly.com/badges/4b7f26dc-b58b-4c10-8001-4cbf1a49338d/linked_in_profile" target="_blank" rel="noopener" aria-label="Badge for Python Project for Data Science">Badge</a></div></li>
+            <li class="cert"><div><h3>Python for Data Science, AI &amp; Development</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div><div><dt>Credential ID</dt><dd>2BUF4B9C3VEN</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/2BUF4B9C3VEN" target="_blank" rel="noopener" aria-label="Show credential for Python for Data Science, AI &amp; Development">Show credential</a></div></li>
+            <li class="cert"><div><h3>Python for Data Science and AI</h3><p class="cert-issuer">Coursera</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.credly.com/badges/2766edaf-e924-434b-baea-ab0a6280ecd8/linked_in_profile" target="_blank" rel="noopener" aria-label="Show credential for Python for Data Science and AI">Show credential</a></div></li>
+          </ul>
+        </details>
+        <details class="cert-group">
+          <summary><span class="cg-row"><span class="cg-title">Data analytics</span><span class="cg-meta">9 certificates</span><span class="p-toggle" aria-hidden="true"></span></span></summary>
+          <ul class="cert-list">
+            <li class="cert"><div><h3>Share Data Through the Art of Visualization</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>May 2025</dd></div><div><dt>Credential ID</dt><dd>X1FMZ9NDWUYE</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/X1FMZ9NDWUYE" target="_blank" rel="noopener" aria-label="Show credential for Share Data Through the Art of Visualization">Show credential</a></div></li>
+            <li class="cert"><div><h3>Data Analysis with R Programming</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>May 2025</dd></div><div><dt>Credential ID</dt><dd>NHGTLBU4YGJR</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/NHGTLBU4YGJR" target="_blank" rel="noopener" aria-label="Show credential for Data Analysis with R Programming">Show credential</a></div></li>
+            <li class="cert"><div><h3>Google Data Analytics Specialization</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>May 2025</dd></div><div><dt>Credential ID</dt><dd>6N7S91V8LAT3</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/specialization/6N7S91V8LAT3" target="_blank" rel="noopener" aria-label="Show credential for Google Data Analytics Specialization">Show credential</a></div></li>
+            <li class="cert"><div><h3>Google Data Analytics Professional Certificate (v2)</h3><p class="cert-issuer">Coursera</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>May 2025</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.credly.com/badges/35300542-7186-493b-8b82-b8c37d277563/linked_in_profile" target="_blank" rel="noopener" aria-label="Show credential for Google Data Analytics Professional Certificate (v2)">Show credential</a></div></li>
+            <li class="cert"><div><h3>Analyze Data to Answer Questions</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Apr 2025</dd></div><div><dt>Credential ID</dt><dd>RI7PQ7AZ1Z8F</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/RI7PQ7AZ1Z8F" target="_blank" rel="noopener" aria-label="Show credential for Analyze Data to Answer Questions">Show credential</a></div></li>
+            <li class="cert"><div><h3>Prepare Data for Exploration</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Mar 2025</dd></div><div><dt>Credential ID</dt><dd>KTYH5LXZ0NFU</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/KTYH5LXZ0NFU" target="_blank" rel="noopener" aria-label="Show credential for Prepare Data for Exploration">Show credential</a></div></li>
+            <li class="cert"><div><h3>Process Data from Dirty to Clean</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Mar 2025</dd></div><div><dt>Credential ID</dt><dd>PWWEYD4CJJUC</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/verify/PWWEYD4CJJUC" target="_blank" rel="noopener" aria-label="Show credential for Process Data from Dirty to Clean">Show credential</a></div></li>
+            <li class="cert"><div><h3>Ask Questions to Make Data-Driven Decisions</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Feb 2025</dd></div><div><dt>Credential ID</dt><dd>FBIFISPGPXQS</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/FBIFISPGPXQS" target="_blank" rel="noopener" aria-label="Show credential for Ask Questions to Make Data-Driven Decisions">Show credential</a></div></li>
+            <li class="cert"><div><h3>Foundations: Data, Data, Everywhere</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2025</dd></div><div><dt>Credential ID</dt><dd>R58ZYQELOJBE</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/R58ZYQELOJBE" target="_blank" rel="noopener" aria-label="Show credential for Foundations: Data, Data, Everywhere">Show credential</a></div></li>
+          </ul>
+        </details>
+        <details class="cert-group">
+          <summary><span class="cg-row"><span class="cg-title">AI and machine learning</span><span class="cg-meta">13 certificates</span><span class="p-toggle" aria-hidden="true"></span></span></summary>
+          <ul class="cert-list">
+            <li class="cert"><div><h3>Google AI Essentials</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Aug 2024</dd></div><div><dt>Credential ID</dt><dd>4WQKK235PL9W</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/4WQKK235PL9W" target="_blank" rel="noopener" aria-label="Show credential for Google AI Essentials">Show credential</a></div></li>
+            <li class="cert"><div><h3>Developing AI Applications with Python and Flask</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Mar 2024</dd></div><div><dt>Credential ID</dt><dd>KBS6ZPX73C8G</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/KBS6ZPX73C8G" target="_blank" rel="noopener" aria-label="Show credential for Developing AI Applications with Python and Flask">Show credential</a></div></li>
+            <li class="cert"><div><h3>Python Project for AI and Application Development</h3><p class="cert-issuer">Coursera</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Mar 2024</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.credly.com/badges/20fea969-0319-4be1-b433-e72a227a8c33/linked_in_profile" target="_blank" rel="noopener" aria-label="Show credential for Python Project for AI and Application Development">Show credential</a></div></li>
+            <li class="cert"><div><h3>Building AI Applications with Watson APIs</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Mar 2024</dd></div><div><dt>Credential ID</dt><dd>VJ8NJRANCPF7</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/VJ8NJRANCPF7" target="_blank" rel="noopener" aria-label="Show credential for Building AI Applications with Watson APIs">Show credential</a></div></li>
+            <li class="cert"><div><h3>IBM Applied AI Specialization</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Mar 2024</dd></div><div><dt>Credential ID</dt><dd>DMYW8MTGCQMF</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/specialization/DMYW8MTGCQMF" target="_blank" rel="noopener" aria-label="Show credential for IBM Applied AI Specialization">Show credential</a></div></li>
+            <li class="cert"><div><h3>Introduction to Artificial Intelligence (AI)</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Feb 2024</dd></div><div><dt>Credential ID</dt><dd>TP5YT657G4L3</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/TP5YT657G4L3" target="_blank" rel="noopener" aria-label="Show credential for Introduction to Artificial Intelligence (AI)">Show credential</a></div></li>
+            <li class="cert"><div><h3>Generative AI: Introduction and Applications</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Feb 2024</dd></div><div><dt>Credential ID</dt><dd>N86X2BAY9LXC</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/N86X2BAY9LXC" target="_blank" rel="noopener" aria-label="Show credential for Generative AI: Introduction and Applications">Show credential</a></div></li>
+            <li class="cert"><div><h3>Generative AI: Prompt Engineering Basics</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Feb 2024</dd></div><div><dt>Credential ID</dt><dd>3KPGCNJDH6Z5</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/3KPGCNJDH6Z5" target="_blank" rel="noopener" aria-label="Certificate for Generative AI: Prompt Engineering Basics">Certificate</a><a class="btn btn-small" href="https://www.credly.com/badges/e1ca97de-49f2-4803-a45d-25747324f2cf/linked_in_profile" target="_blank" rel="noopener" aria-label="Badge for Generative AI: Prompt Engineering Basics">Badge</a></div></li>
+            <li class="cert"><div><h3>Building AI Powered Chatbots Without Programming</h3><p class="cert-issuer">IBM</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Feb 2024</dd></div><div><dt>Credential ID</dt><dd>FDLAK3KEJQPQ</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/FDLAK3KEJQPQ" target="_blank" rel="noopener" aria-label="Show credential for Building AI Powered Chatbots Without Programming">Show credential</a></div></li>
+            <li class="cert"><div><h3>Chatbot Building Essentials</h3><p class="cert-issuer">Coursera</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Feb 2024</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.credly.com/badges/76e8a8cd-ea88-477b-be26-be440c99a2ed/linked_in_profile" target="_blank" rel="noopener" aria-label="Show credential for Chatbot Building Essentials">Show credential</a></div></li>
+            <li class="cert"><div><h3>Introduction to AI</h3><p class="cert-issuer">Kodacy</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Feb 2024</dd></div><div><dt>Credential ID</dt><dd>4a5b3af57de9db44</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://kodacy.com/tutor-certificate/?cert_hash=4a5b3af57de9db44" target="_blank" rel="noopener" aria-label="Show credential for Introduction to AI">Show credential</a></div></li>
+            <li class="cert"><div><h3>Artificial intelligence and Machine Learning</h3><p class="cert-issuer">Kodacy</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Feb 2024</dd></div><div><dt>Credential ID</dt><dd>94e744ae0932b4a5</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://kodacy.com/tutor-certificate/?cert_hash=94e744ae0932b4a5" target="_blank" rel="noopener" aria-label="Show credential for Artificial intelligence and Machine Learning">Show credential</a></div></li>
+            <li class="cert"><div><h3>Build a natural language processing solution with Azure AI Language</h3><p class="cert-issuer">Microsoft</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div><div><dt>Credential ID</dt><dd>4B684BC81558EA6F</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://learn.microsoft.com/api/credentials/share/en-us/GOHULVK-9318/4B684BC81558EA6F?sharingId" target="_blank" rel="noopener" aria-label="Show credential for Build a natural language processing solution with Azure AI Language">Show credential</a></div></li>
+          </ul>
+        </details>
+        <details class="cert-group">
+          <summary><span class="cg-row"><span class="cg-title">Programming and SQL</span><span class="cg-meta">12 certificates</span><span class="p-toggle" aria-hidden="true"></span></span></summary>
+          <ul class="cert-list">
+            <li class="cert"><div><h3>SQL for Data Science (and Version Control with GitHub)</h3><p class="cert-issuer">Coursera</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Oct 2025</dd></div><div><dt>Credential ID</dt><dd>WQ1PBQIZ9C14</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/WQ1PBQIZ9C14" target="_blank" rel="noopener" aria-label="Show credential for SQL for Data Science (and Version Control with GitHub)">Show credential</a></div></li>
+            <li class="cert"><div><h3>Introduction to Git and GitHub</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Oct 2024</dd></div><div><dt>Credential ID</dt><dd>6G6DUN7CFGNV</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/6G6DUN7CFGNV" target="_blank" rel="noopener" aria-label="Show credential for Introduction to Git and GitHub">Show credential</a></div></li>
+            <li class="cert"><div><h3>Troubleshooting and Debugging Techniques</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Oct 2024</dd></div><div><dt>Credential ID</dt><dd>KV4FYXCLD4KW</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/KV4FYXCLD4KW" target="_blank" rel="noopener" aria-label="Show credential for Troubleshooting and Debugging Techniques">Show credential</a></div></li>
+            <li class="cert"><div><h3>Using Python to Interact with the Operating System</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Sep 2024</dd></div><div><dt>Credential ID</dt><dd>PD2D8IH1ZJDD</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/PD2D8IH1ZJDD" target="_blank" rel="noopener" aria-label="Show credential for Using Python to Interact with the Operating System">Show credential</a></div></li>
+            <li class="cert"><div><h3>Crash Course on Python</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Aug 2024</dd></div><div><dt>Credential ID</dt><dd>040YA801VC4G</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/040YA801VC4G" target="_blank" rel="noopener" aria-label="Show credential for Crash Course on Python">Show credential</a></div></li>
+            <li class="cert"><div><h3>Python Zero to Hero</h3><p class="cert-issuer">GUVI Geek Networks, IITM Research Park</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Feb 2024</dd></div><div><dt>Credential ID</dt><dd>87Lm7219oJ893jHh0a</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.guvi.in/verify-certificate?id=87Lm7219oJ893jHh0a" target="_blank" rel="noopener" aria-label="Show credential for Python Zero to Hero">Show credential</a></div></li>
+            <li class="cert"><div><h3>NM - TNCPL Certificate</h3><p class="cert-issuer">GUVI Geek Networks, IITM Research Park</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Feb 2024</dd></div><div><dt>Credential ID</dt><dd>224sD790940Jz1w7Nh</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.guvi.in/share-certificate/224sD790940Jz1w7Nh" target="_blank" rel="noopener" aria-label="Show credential for NM - TNCPL Certificate">Show credential</a></div></li>
+            <li class="cert"><div><h3>Python Functions, Files, and Dictionaries</h3><p class="cert-issuer">University of Michigan</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div><div><dt>Credential ID</dt><dd>K49ZXWPMY7HT</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/K49ZXWPMY7HT" target="_blank" rel="noopener" aria-label="Show credential for Python Functions, Files, and Dictionaries">Show credential</a></div></li>
+            <li class="cert"><div><h3>Python Basics</h3><p class="cert-issuer">University of Michigan</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Nov 2023</dd></div><div><dt>Credential ID</dt><dd>Y4MM42GSFCP2</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/Y4MM42GSFCP2" target="_blank" rel="noopener" aria-label="Show credential for Python Basics">Show credential</a></div></li>
+            <li class="cert"><div><h3>SQL (Intermediate) Certificate</h3><p class="cert-issuer">HackerRank</p></div><dl class="cert-meta"></dl><div class="cert-links"><a class="btn btn-small" href="https://www.hackerrank.com/profile/gohul2004" target="_blank" rel="noopener" aria-label="Show credential for SQL (Intermediate) Certificate">Show credential</a></div></li>
+            <li class="cert"><div><h3>Problem Solving (Intermediate) Certificate</h3><p class="cert-issuer">HackerRank</p></div><dl class="cert-meta"></dl><div class="cert-links"><a class="btn btn-small" href="https://www.hackerrank.com/profile/gohul2004" target="_blank" rel="noopener" aria-label="Show credential for Problem Solving (Intermediate) Certificate">Show credential</a></div></li>
+            <li class="cert"><div><h3>Python</h3><p class="cert-issuer">HackerRank</p></div><dl class="cert-meta"></dl><div class="cert-links"><a class="btn btn-small" href="https://www.hackerrank.com/profile/gohul2004" target="_blank" rel="noopener" aria-label="Show credential for Python">Show credential</a></div></li>
+          </ul>
+        </details>
+        <details class="cert-group">
+          <summary><span class="cg-row"><span class="cg-title">Cloud computing</span><span class="cg-meta">6 certificates</span><span class="p-toggle" aria-hidden="true"></span></span></summary>
+          <ul class="cert-list">
+            <li class="cert"><div><h3>Google Cloud Computing Foundations: Cloud Computing Fundamentals</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Apr 2024</dd></div><div><dt>Credential ID</dt><dd>8686645</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.cloudskillsboost.google/public_profiles/a913dcd2-0d1c-49b0-9a27-15c4fe300dec/badges/8686645?utm_medium=social&amp;utm_source=linkedin&amp;utm_campaign=ql-social-share" target="_blank" rel="noopener" aria-label="Show credential for Google Cloud Computing Foundations: Cloud Computing Fundamentals">Show credential</a></div></li>
+            <li class="cert"><div><h3>Google Cloud Computing Foundations: Infrastructure in Google Cloud</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Apr 2024</dd></div><div><dt>Credential ID</dt><dd>8691661</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.cloudskillsboost.google/public_profiles/a913dcd2-0d1c-49b0-9a27-15c4fe300dec/badges/8691661?utm_medium=social&amp;utm_source=linkedin&amp;utm_campaign=ql-social-share" target="_blank" rel="noopener" aria-label="Show credential for Google Cloud Computing Foundations: Infrastructure in Google Cloud">Show credential</a></div></li>
+            <li class="cert"><div><h3>Google Cloud Computing Foundations: Networking</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Apr 2024</dd></div><div><dt>Credential ID</dt><dd>8692494</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.cloudskillsboost.google/public_profiles/a913dcd2-0d1c-49b0-9a27-15c4fe300dec/badges/8692494?utm_medium=social&amp;utm_source=linkedin&amp;utm_campaign=ql-social-share" target="_blank" rel="noopener" aria-label="Show credential for Google Cloud Computing Foundations: Networking">Show credential</a></div></li>
+            <li class="cert"><div><h3>Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Apr 2024</dd></div><div><dt>Credential ID</dt><dd>8708552</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.cloudskillsboost.google/public_profiles/a913dcd2-0d1c-49b0-9a27-15c4fe300dec/badges/8708552?utm_medium=social&amp;utm_source=linkedin&amp;utm_campaign=ql-social-share" target="_blank" rel="noopener" aria-label="Show credential for Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud">Show credential</a></div></li>
+            <li class="cert"><div><h3>Google Cloud Essentials</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Apr 2024</dd></div><div><dt>Credential ID</dt><dd>8725487</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.cloudskillsboost.google/public_profiles/a913dcd2-0d1c-49b0-9a27-15c4fe300dec/badges/8725487?utm_medium=social&amp;utm_source=linkedin&amp;utm_campaign=ql-social-share" target="_blank" rel="noopener" aria-label="Show credential for Google Cloud Essentials">Show credential</a></div></li>
+            <li class="cert"><div><h3>Google Cloud Computing Foundations Certificate</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Apr 2024</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.credly.com/badges/ccf20195-ac2b-4d0a-aa9b-8193bd20a62a/linked_in_profile" target="_blank" rel="noopener" aria-label="Show credential for Google Cloud Computing Foundations Certificate">Show credential</a></div></li>
+          </ul>
+        </details>
+        <details class="cert-group">
+          <summary><span class="cg-row"><span class="cg-title">Cybersecurity</span><span class="cg-meta">9 certificates</span><span class="p-toggle" aria-hidden="true"></span></span></summary>
+          <ul class="cert-list">
+            <li class="cert"><div><h3>Foundations of Cybersecurity</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div><div><dt>Credential ID</dt><dd>6QCH4M9T4SPG</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/6QCH4M9T4SPG" target="_blank" rel="noopener" aria-label="Show credential for Foundations of Cybersecurity">Show credential</a></div></li>
+            <li class="cert"><div><h3>Connect and Protect: Networks and Network Security</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div><div><dt>Credential ID</dt><dd>6RV3P85ST6UZ</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/6RV3P85ST6UZ" target="_blank" rel="noopener" aria-label="Show credential for Connect and Protect: Networks and Network Security">Show credential</a></div></li>
+            <li class="cert"><div><h3>Tools of the Trade: Linux and SQL</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div><div><dt>Credential ID</dt><dd>CCHD2BA94BS3</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/CCHD2BA94BS3" target="_blank" rel="noopener" aria-label="Show credential for Tools of the Trade: Linux and SQL">Show credential</a></div></li>
+            <li class="cert"><div><h3>Assets, Threats, and Vulnerabilities</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div><div><dt>Credential ID</dt><dd>N8RM6UVPMXMW</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/N8RM6UVPMXMW" target="_blank" rel="noopener" aria-label="Show credential for Assets, Threats, and Vulnerabilities">Show credential</a></div></li>
+            <li class="cert"><div><h3>Sound the Alarm: Detection and Response</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div><div><dt>Credential ID</dt><dd>2DYLLQP2AVQD</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/2DYLLQP2AVQD" target="_blank" rel="noopener" aria-label="Show credential for Sound the Alarm: Detection and Response">Show credential</a></div></li>
+            <li class="cert"><div><h3>Automate Cybersecurity Tasks with Python</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div><div><dt>Credential ID</dt><dd>UC3X5L3Z72F2</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/records/UC3X5L3Z72F2" target="_blank" rel="noopener" aria-label="Show credential for Automate Cybersecurity Tasks with Python">Show credential</a></div></li>
+            <li class="cert"><div><h3>Google Cybersecurity Specialization</h3><p class="cert-issuer">Google</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div><div><dt>Credential ID</dt><dd>GYBQ7T2PEDN3</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.coursera.org/account/accomplishments/specialization/GYBQ7T2PEDN3" target="_blank" rel="noopener" aria-label="Show credential for Google Cybersecurity Specialization">Show credential</a></div></li>
+            <li class="cert"><div><h3>Google Cybersecurity Certificate</h3><p class="cert-issuer">Coursera</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.credly.com/badges/10880d1d-ee4e-481c-ab95-d0ad22e546be/linked_in_profile" target="_blank" rel="noopener" aria-label="Show credential for Google Cybersecurity Certificate">Show credential</a></div></li>
+            <li class="cert"><div><h3>Introduction to Cybersecurity</h3><p class="cert-issuer">Cisco</p></div><dl class="cert-meta"><div><dt>Issued</dt><dd>Jan 2024</dd></div></dl><div class="cert-links"><a class="btn btn-small" href="https://www.credly.com/badges/2832286b-5e3d-4bae-a418-9c8fad8252b7/linked_in_profile" target="_blank" rel="noopener" aria-label="Show credential for Introduction to Cybersecurity">Show credential</a></div></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <h2 id="contact-h">Get in touch</h2>
+      <p class="intro">I'm looking for data science and machine learning roles, including co-ops and internships. Email is the fastest way to reach me.</p>
+      <dl class="emails">
+        <div>
+          <dt>University</dt>
+          <dd><a href="mailto:vempadimuthusamika.g@northeastern.edu">vempadimuthusamika.g@<wbr>northeastern.edu</a><button class="icon-btn copy-btn" type="button" data-copy-email="vempadimuthusamika.g@northeastern.edu" aria-label="Copy university email" title="Copy university email"><svg class="i-copy" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15h-.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="i-check" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></dd>
+        </div>
+        <div>
+          <dt>Personal</dt>
+          <dd><a href="mailto:gohul2004@gmail.com">gohul2004@<wbr>gmail.com</a><button class="icon-btn copy-btn" type="button" data-copy-email="gohul2004@gmail.com" aria-label="Copy personal email" title="Copy personal email"><svg class="i-copy" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15h-.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="i-check" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></dd>
+        </div>
+      </dl>
+      <div class="actions">
+        <a class="btn" href="https://www.linkedin.com/in/gohul-v-k/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" data-link="github" target="_blank" rel="noopener" hidden>GitHub</a>
+        <a class="btn" data-link="resume" target="_blank" rel="noopener" hidden>Résumé (PDF)</a>
+      </div>
+      <p class="where">Based in Boston, Massachusetts (Eastern Time).</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span data-year>2026</span> Gohul Vempadimuthusami Kannan</p>
+    <a href="#about">Back to top</a>
+  </div>
+</footer>
+</div>
+</div>
+
+<div class="toast-region"><div class="toast" id="toast" role="status" aria-live="polite"></div></div>
+
+<script>
+(() => {
+  'use strict';
+
+  /* ── Your links ────────────────────────────────────────────────
+     Fill any of these in and the matching button appears on the page. */
+  const LINKS = {
+    email: 'vempadimuthusamika.g@northeastern.edu',
+    github: '',   // e.g. 'https://github.com/your-username'
+    resume: '',   // e.g. 'resume.pdf' after uploading the PDF next to this file
+    code: {       // a repository (or dashboard) link for any project
+      'p-reid': '',
+      'p-learners': '',
+      'p-caption': '',
+      'p-deepfake': '',
+      'p-segment': '',
+      'p-house': '',
+      'p-gesture': '',
+      'p-catsdogs': ''
+    }
+  };
+
+  const root = document.documentElement;
+  const darkMQ = window.matchMedia('(prefers-color-scheme: dark)');
+  const reduceMQ = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const smooth = () => (reduceMQ.matches ? 'auto' : 'smooth');
+  const framed = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+
+  /* Links from LINKS */
+  document.querySelectorAll('[data-link]').forEach((a) => {
+    const url = LINKS[a.dataset.link];
+    if (url) { a.href = url; a.hidden = false; }
+  });
+  document.querySelectorAll('[data-code]').forEach((a) => {
+    const url = LINKS.code[a.dataset.code];
+    if (url) { a.href = url; a.hidden = false; }
+  });
+  document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = String(new Date().getFullYear()); });
+
+  /* Toast and clipboard */
+  const toastEl = document.getElementById('toast');
+  let toastTimer = 0;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove('show'), 3200);
+  }
+  async function copyText(text) {
+    try {
+      if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); return true; }
+    } catch (e) { /* try the fallback below */ }
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed'; ta.style.top = '-9999px'; ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      const ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      return ok;
+    } catch (e) { return false; }
+  }
+  document.querySelectorAll('[data-copy-email]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const address = btn.dataset.copyEmail || LINKS.email;
+      const ok = await copyText(address);
+      toast(ok ? `Copied ${address}` : `Copying is blocked here. The address is ${address}`);
+      if (ok) {
+        btn.classList.add('copied');
+        clearTimeout(btn.copiedTimer);
+        btn.copiedTimer = setTimeout(() => btn.classList.remove('copied'), 1600);
+      }
+    });
+  });
+
+  /* "Copy email" asks which address to copy */
+  document.querySelectorAll('[data-email-menu]').forEach((trigger) => {
+    const menu = document.getElementById(trigger.getAttribute('aria-controls'));
+    if (!menu) return;
+    const setOpen = (open) => {
+      trigger.setAttribute('aria-expanded', String(open));
+      menu.hidden = !open;
+      if (open) { const first = menu.querySelector('button'); if (first) first.focus(); }
+    };
+    trigger.addEventListener('click', () => setOpen(menu.hidden));
+    menu.addEventListener('click', (e) => {
+      if (e.target.closest('[data-copy-email]')) setTimeout(() => { if (!menu.hidden) { setOpen(false); trigger.focus(); } }, 600);
+    });
+    document.addEventListener('click', (e) => {
+      if (!menu.hidden && !menu.contains(e.target) && !trigger.contains(e.target)) setOpen(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !menu.hidden) { setOpen(false); trigger.focus(); }
+    });
+  });
+  document.querySelectorAll('[data-copy-link]').forEach((btn) => {
+    if (framed) { btn.hidden = true; return; }
+    btn.addEventListener('click', async () => {
+      const url = `${location.href.split('#')[0]}#${btn.dataset.copyLink}`;
+      const ok = await copyText(url);
+      toast(ok ? 'Link copied' : `Copying is blocked here. The link is ${url}`);
+    });
+  });
+
+  /* Theme */
+  const themeBtn = document.querySelector('.theme-btn');
+  const theme = () => root.getAttribute('data-theme') || (darkMQ.matches ? 'dark' : 'light');
+  function syncTheme() {
+    const label = theme() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme';
+    themeBtn.setAttribute('aria-label', label);
+    themeBtn.title = label;
+    document.dispatchEvent(new Event('themechange'));
+  }
+  themeBtn.addEventListener('click', () => {
+    const next = theme() === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('gvk-theme', next); } catch (e) { /* storage unavailable */ }
+    syncTheme();
+  });
+  if (darkMQ.addEventListener) darkMQ.addEventListener('change', syncTheme);
+  new MutationObserver(syncTheme).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+  syncTheme();
+
+  /* Navigation */
+  const header = document.querySelector('.site-header');
+  const menuBtn = document.querySelector('.menu-btn');
+  const navList = document.getElementById('nav-list');
+  const navLinks = Array.from(navList.querySelectorAll('a'));
+  const markCurrent = (id) => navLinks.forEach((a) => {
+    if (a.getAttribute('href') === `#${id}`) a.setAttribute('aria-current', 'location');
+    else a.removeAttribute('aria-current');
+  });
+  function setMenu(open) {
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.textContent = open ? 'Close' : 'Menu';
+    navList.classList.toggle('open', open);
+  }
+  menuBtn.addEventListener('click', () => setMenu(menuBtn.getAttribute('aria-expanded') !== 'true'));
+  navList.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menuBtn.getAttribute('aria-expanded') === 'true') { setMenu(false); menuBtn.focus(); }
+  });
+  /* Highlight the section you're reading. A clicked link stays highlighted
+     while the page scrolls to it, instead of flashing through every section. */
+  const sections = navLinks.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  let pinned = '';
+  let settleUntil = 0;
+  function updateCurrent() {
+    if (pinned) {
+      const r = document.getElementById(pinned).getBoundingClientRect();
+      const inView = r.top <= window.innerHeight * 0.6 && r.bottom >= window.innerHeight * 0.25;
+      if (performance.now() < settleUntil || inView) { markCurrent(pinned); return; }
+      pinned = '';
+    }
+    const atBottom = window.scrollY > 0 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+    if (atBottom) { markCurrent(sections[sections.length - 1].id); return; }
+    const line = window.innerHeight * 0.3;
+    let current = sections[0].id;
+    sections.forEach((s) => { if (s.getBoundingClientRect().top <= line) current = s.id; });
+    markCurrent(current);
+  }
+  let ticking = false;
+  const onScroll = () => {
+    header.classList.toggle('scrolled', window.scrollY > 4);
+    if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; updateCurrent(); }); }
+  };
+  const unpin = () => { if (pinned) { pinned = ''; settleUntil = 0; updateCurrent(); } };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', updateCurrent);
+  window.addEventListener('scrollend', () => { settleUntil = 0; updateCurrent(); });
+  window.addEventListener('wheel', unpin, { passive: true });
+  window.addEventListener('touchmove', unpin, { passive: true });
+  window.addEventListener('keydown', (e) => {
+    if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '].includes(e.key)) unpin();
+  });
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    const id = a.getAttribute('href').slice(1);
+    if (!sections.some((s) => s.id === id)) return;
+    pinned = id;
+    settleUntil = performance.now() + 1500;
+    markCurrent(id);
+  });
+  onScroll();
+
+  /* Projects */
+  const projects = Array.from(document.querySelectorAll('.project'));
+
+  /* Deep links to projects (#p-reid etc.) */
+  function openProject(id, scroll) {
+    const el = document.getElementById(id);
+    if (!el || !el.classList.contains('project')) return false;
+    el.open = true;
+    if (scroll) requestAnimationFrame(() => el.scrollIntoView({ behavior: smooth(), block: 'start' }));
+    return true;
+  }
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#p-"]');
+    if (!a) return;
+    const id = a.getAttribute('href').slice(1);
+    if (!openProject(id, true)) return;
+    e.preventDefault();
+    try { history.pushState(null, '', `#${id}`); } catch (err) { /* history unavailable */ }
+    const s = document.getElementById(id).querySelector('summary');
+    if (s) s.focus({ preventScroll: true });
+  });
+  const fromHash = () => {
+    let id = '';
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch (e) { return; }
+    if (id.startsWith('p-')) openProject(id, true);
+  };
+  window.addEventListener('hashchange', fromHash);
+  fromHash();
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach((p) => { p.dataset.wasOpen = String(p.open); p.open = true; }));
+  window.addEventListener('afterprint', () => document.querySelectorAll('details').forEach((p) => { p.open = p.dataset.wasOpen === 'true'; }));
+
+  /* HOG-style gradient map of the name */
+  (function initHOG() {
+    const panel = document.querySelector('.fig-panel');
+    const canvas = document.getElementById('hog');
+    if (!panel || !canvas || !canvas.getContext) return;
+    const ctx = canvas.getContext('2d');
+    const off = document.createElement('canvas');
+    const octx = off.getContext('2d', { willReadFrequently: true });
+    if (!ctx || !octx) return;
+
+    const TEXT = 'Gohul';
+    const FONT = '"Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif';
+    const STOPS = [[68, 1, 84], [59, 82, 139], [33, 145, 140], [94, 201, 98], [253, 231, 37]]; // viridis
+    const N = 32;
+    const colors = [];
+    const widths = [];
+    const buckets = [];
+    for (let i = 0; i < N; i += 1) {
+      const t = i / (N - 1);
+      const x = t * (STOPS.length - 1);
+      const k = Math.min(Math.floor(x), STOPS.length - 2);
+      const f = x - k;
+      const c = [0, 1, 2].map((j) => Math.round(STOPS[k][j] + (STOPS[k + 1][j] - STOPS[k][j]) * f));
+      colors.push(`rgba(${c[0]},${c[1]},${c[2]},${(0.5 + 0.5 * t).toFixed(3)})`);
+      widths.push(1.1 + 0.9 * t);
+      buckets.push([]);
+    }
+
+    let W = 0; let H = 0; let cell = 10; let cols = 0; let rows = 0; let ox = 0; let oy = 0;
+    let gx0 = new Float32Array(0); let gy0 = new Float32Array(0); let norm = 1;
+    let grow = 1; let growing = false; let growStart = 0;
+    const GROW_MS = 1400;
+    const ptr = { x: 0, y: 0, tx: 0, ty: 0, s: 0, ts: 0 };
+    let raf = 0;
+    let started = false;
+
+    function blur(src) {
+      const tmp = new Float32Array(src.length);
+      const out = new Float32Array(src.length);
+      for (let y = 0; y < rows; y += 1) {
+        const r = y * cols;
+        for (let x = 0; x < cols; x += 1) {
+          tmp[r + x] = (src[r + Math.max(x - 1, 0)] + src[r + x] + src[r + Math.min(x + 1, cols - 1)]) / 3;
+        }
+      }
+      for (let y = 0; y < rows; y += 1) {
+        const up = Math.max(y - 1, 0) * cols; const dn = Math.min(y + 1, rows - 1) * cols; const r = y * cols;
+        for (let x = 0; x < cols; x += 1) out[r + x] = (tmp[up + x] + tmp[r + x] + tmp[dn + x]) / 3;
+      }
+      return out;
+    }
+
+    function computeField() {
+      const S = 4;
+      off.width = cols * S;
+      off.height = rows * S;
+      octx.setTransform(1, 0, 0, 1, 0, 0);
+      octx.fillStyle = '#000';
+      octx.fillRect(0, 0, off.width, off.height);
+      octx.font = `700 100px ${FONT}`;
+      const m = octx.measureText(TEXT);
+      const left0 = m.actualBoundingBoxLeft || 0;
+      const w0 = (typeof m.actualBoundingBoxRight === 'number' ? left0 + m.actualBoundingBoxRight : m.width) || m.width || 300;
+      const asc0 = m.actualBoundingBoxAscent || 74;
+      const desc0 = m.actualBoundingBoxDescent || 2;
+      const scale = Math.min((off.width * 0.86) / w0, (off.height * 0.64) / (asc0 + desc0));
+      octx.font = `700 ${(100 * scale).toFixed(2)}px ${FONT}`;
+      octx.textBaseline = 'alphabetic';
+      octx.fillStyle = '#fff';
+      octx.fillText(TEXT, (off.width - w0 * scale) / 2 + left0 * scale, (off.height - (asc0 + desc0) * scale) / 2 + asc0 * scale);
+
+      const img = octx.getImageData(0, 0, off.width, off.height).data;
+      const n = cols * rows;
+      let I = new Float32Array(n);
+      const stride = off.width * 4;
+      for (let cy = 0; cy < rows; cy += 1) {
+        for (let cx = 0; cx < cols; cx += 1) {
+          let sum = 0;
+          for (let sy = 0; sy < S; sy += 1) {
+            let idx = (cy * S + sy) * stride + cx * S * 4;
+            for (let sx = 0; sx < S; sx += 1) { sum += img[idx]; idx += 4; }
+          }
+          I[cy * cols + cx] = sum / (S * S * 255);
+        }
+      }
+      I = blur(I);
+      if (cell >= 8) I = blur(I);
+      for (let cy = 0; cy < rows; cy += 1) {
+        for (let cx = 0; cx < cols; cx += 1) {
+          I[cy * cols + cx] += 0.045 * Math.sin(cx * 0.23 + cy * 0.11)
+            + 0.035 * Math.sin(cx * 0.071 - cy * 0.31 + 1.7)
+            + 0.025 * Math.sin((cx + 2 * cy) * 0.37 + 0.6);
+        }
+      }
+      gx0 = new Float32Array(n);
+      gy0 = new Float32Array(n);
+      let max = 0;
+      for (let cy = 0; cy < rows; cy += 1) {
+        const r = cy * cols; const up = Math.max(cy - 1, 0) * cols; const dn = Math.min(cy + 1, rows - 1) * cols;
+        for (let cx = 0; cx < cols; cx += 1) {
+          const gx = (I[r + Math.min(cx + 1, cols - 1)] - I[r + Math.max(cx - 1, 0)]) / 2;
+          const gy = (I[dn + cx] - I[up + cx]) / 2;
+          gx0[r + cx] = gx;
+          gy0[r + cx] = gy;
+          const mag = Math.hypot(gx, gy);
+          if (mag > max) max = mag;
+        }
+      }
+      norm = max > 0 ? max : 1;
+    }
+
+    function layout() {
+      const r = canvas.getBoundingClientRect();
+      W = Math.max(1, r.width);
+      H = Math.max(1, r.height);
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(W * dpr);
+      canvas.height = Math.round(H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.lineCap = 'round';
+      cell = Math.max(6, Math.min(10, W / 112));
+      cols = Math.max(8, Math.floor(W / cell));
+      rows = Math.max(4, Math.floor(H / cell));
+      ox = (W - cols * cell) / 2;
+      oy = (H - rows * cell) / 2;
+      computeField();
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      for (let b = 0; b < N; b += 1) buckets[b].length = 0;
+      const sigma = Math.max(3.8, Math.min(cols, rows) * 0.19);
+      const s2 = sigma * sigma;
+      const amp = 2.1 * ptr.s;
+      const px = (ptr.x - ox) / cell - 0.5;
+      const py = (ptr.y - oy) / cell - 0.5;
+      const reach2 = 9 * s2;
+      const sizeK = 0.8 + 0.2 * (cell / 10);
+      for (let cy = 0; cy < rows; cy += 1) {
+        const r = cy * cols;
+        const y = oy + (cy + 0.5) * cell;
+        for (let cx = 0; cx < cols; cx += 1) {
+          let g = 1;
+          if (grow < 1) {
+            let local = grow * 1.6 - (cx / cols) * 0.6;
+            if (local <= 0) continue;
+            if (local > 1) local = 1;
+            g = 1 - Math.pow(1 - local, 3);
+          }
+          let gx = gx0[r + cx];
+          let gy = gy0[r + cx];
+          if (amp > 0.002) {
+            const dx = cx - px; const dy = cy - py; const d2 = dx * dx + dy * dy;
+            if (d2 < reach2) {
+              const e = (amp * Math.exp(-d2 / (2 * s2))) / s2;
+              gx -= dx * e;
+              gy -= dy * e;
+            }
+          }
+          let m = Math.hypot(gx, gy) / norm;
+          if (m > 1) m = 1;
+          const t = Math.pow(m, 0.72);
+          const half = cell * 0.46 * (0.2 + 0.8 * t) * g;
+          if (half < 0.3) continue;
+          const ang = Math.atan2(gy, gx) + Math.PI / 2;
+          const bi = Math.min(N - 1, Math.round(t * (N - 1)));
+          buckets[bi].push(ox + (cx + 0.5) * cell, y, Math.cos(ang) * half, Math.sin(ang) * half);
+        }
+      }
+      for (let b = 0; b < N; b += 1) {
+        const L = buckets[b];
+        if (!L.length) continue;
+        ctx.strokeStyle = colors[b];
+        ctx.lineWidth = widths[b] * sizeK;
+        ctx.beginPath();
+        for (let k = 0; k < L.length; k += 4) {
+          ctx.moveTo(L[k] - L[k + 2], L[k + 1] - L[k + 3]);
+          ctx.lineTo(L[k] + L[k + 2], L[k + 1] + L[k + 3]);
+        }
+        ctx.stroke();
+      }
+    }
+
+    function frame(now) {
+      raf = 0;
+      let busy = false;
+      if (growing) {
+        grow = Math.min(1, (now - growStart) / GROW_MS);
+        if (grow < 1) busy = true; else growing = false;
+      }
+      const reduce = reduceMQ.matches;
+      const kp = reduce ? 1 : 0.3;
+      const ks = reduce ? 1 : 0.16;
+      ptr.x += (ptr.tx - ptr.x) * kp;
+      ptr.y += (ptr.ty - ptr.y) * kp;
+      ptr.s += (ptr.ts - ptr.s) * ks;
+      if (Math.abs(ptr.tx - ptr.x) > 0.25 || Math.abs(ptr.ty - ptr.y) > 0.25 || Math.abs(ptr.ts - ptr.s) > 0.004) busy = true;
+      else { ptr.x = ptr.tx; ptr.y = ptr.ty; ptr.s = ptr.ts; }
+      draw();
+      if (busy) raf = requestAnimationFrame(frame);
+    }
+    const kick = () => { if (started && !raf) raf = requestAnimationFrame(frame); };
+
+    function aim(e) {
+      const r = canvas.getBoundingClientRect();
+      ptr.tx = e.clientX - r.left;
+      ptr.ty = e.clientY - r.top;
+      if (ptr.s < 0.03) { ptr.x = ptr.tx; ptr.y = ptr.ty; }
+      ptr.ts = 1;
+      kick();
+    }
+    const release = () => { ptr.ts = 0; kick(); };
+    canvas.addEventListener('pointermove', aim);
+    canvas.addEventListener('pointerdown', aim);
+    canvas.addEventListener('pointerleave', release);
+    canvas.addEventListener('pointercancel', release);
+    canvas.addEventListener('pointerup', (e) => { if (e.pointerType !== 'mouse') release(); });
+
+    function start() {
+      if (started) return;
+      started = true;
+      layout();
+      if (reduceMQ.matches) { grow = 1; draw(); } else { grow = 0; growing = true; growStart = performance.now(); kick(); }
+      let t = 0;
+      const refit = () => {
+        clearTimeout(t);
+        t = setTimeout(() => {
+          const r = canvas.getBoundingClientRect();
+          if (Math.abs(r.width - W) > 1 || Math.abs(r.height - H) > 1) { layout(); draw(); }
+        }, 120);
+      };
+      if ('ResizeObserver' in window) new ResizeObserver(refit).observe(panel);
+      else window.addEventListener('resize', refit);
+    }
+
+    const fontLoad = (document.fonts && document.fonts.load)
+      ? document.fonts.load('700 80px "Atkinson Hyperlegible"').catch(() => null)
+      : Promise.resolve(null);
+    fontLoad.then(() => { if (started && cols) { computeField(); draw(); } });
+    Promise.race([fontLoad, new Promise((r) => setTimeout(r, 1000))]).then(start);
+  })();
+})();
+</script>
+</body>
+</html>
